@@ -154,7 +154,7 @@ To build and test the architecture we can use [Virtualbox](https://www.virtualbo
 
         python manage.py runserver 0.0.0.0:8000
 
-28. Let's suppose the serverA eth0's IP is 192.168.0.25. Now, when each server is properly configured, start a web browser on your host machine (the real one) and go to (192.168.0.25:8000/admin/). Log in with creadentials that you have entered creating superuser.
+28. Let's suppose the serverA eth0's IP is 192.168.0.25. Now, when each server is properly configured, start a web browser on your host machine (the real one) and go to [192.168.0.25:8000/admin/](192.168.0.25:8000/admin/). Log in with creadentials that you have entered creating superuser.
 
 29. Now, you can create Tasks and Periodic Tasks in the Django administration panel, and see the results of the tasks on serverD terminal (Celery).
 
