@@ -158,7 +158,7 @@ To build and test the architecture we can use [Virtualbox](https://www.virtualbo
 
 29. Now, you can create Tasks and Periodic Tasks in the Django administration panel, and see the results of the tasks on serverD terminal (Celery).
 
-## Please do not use the configurations on your production! This is just an example for educational purposes.
+## Please do not use the configurations in your production! This is just an example for educational purposes.
 
 TODO:
 
