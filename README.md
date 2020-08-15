@@ -1,24 +1,23 @@
 # N-tier Architecture with Python
 
-This is an example of n-tier (multitier) client-server architecture. If you are interested in how to build a web system with database, broker and workers running on seperate machines, with Python, to perform and manage periodic tasks, this is it!
+It is an example of a web system with a database, message broker and async workers running on seperate machines (n-tier/multitier client-server architecture).
 
-#### What am I exactly talking about?
+__Please, note that the example is for educational purposes and you may need to adjust it appropriately to go live.__
+
+---
 
 Let's assume we want to create a web system that:
 
 - is scalable,
-- allows manage tasks,
-- allows manage periodic tasks,
-- and performs these tasks asynchronously on separate server.
+- allows managing (periodic) tasks,
+- and performs these tasks asynchronously on a separate server.
 
-With Python we can use these technologies:
+If you choose Python, you can use the following technologies:
 
 - [Django](https://www.djangoproject.com/) framework for web app,
 - [MySQL](https://www.mysql.com/) database for web app and task scheduler,
-- [Redis](http://redis.io/) as message broker,
+- [Redis](http://redis.io/) as a message broker,
 - and [Celery](http://www.celeryproject.org/) for tasks execution.
-
-Just look at this graph:
 
 ![n-tier architecture graph](rsrcs/ntier_arch.png)
 
@@ -157,9 +156,3 @@ To build and test the architecture we can use [Virtualbox](https://www.virtualbo
 28. Let's suppose the serverA eth0's IP is 192.168.0.25. Now, when each server is properly configured, start a web browser on your host machine (the real one) and go to [192.168.0.25:8000/admin/](192.168.0.25:8000/admin/). Log in with creadentials that you have entered creating superuser.
 
 29. Now, you can create Tasks and Periodic Tasks in the Django administration panel, and see the results of the tasks on serverD terminal (Celery).
-
-## Please do not use the configurations in your production! This is just an example for educational purposes.
-
-TODO:
-
-- serverE with MongoDB for tasks results.
