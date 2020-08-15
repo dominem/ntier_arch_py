@@ -2,7 +2,7 @@
 
 It is an example of a web system with a database, message broker and async workers running on seperate machines (n-tier/multitier client-server architecture).
 
-__Please, note that the example is for educational purposes and you may need to adjust it appropriately to go live.__
+__Please, note that the example has been created for educational purposes and you may need to adjust it appropriately before going live.__
 
 ---
 
